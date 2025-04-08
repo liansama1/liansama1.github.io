@@ -1,0 +1,9 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 300px auto;
+    justify-content: space-around;
+    text-align: center;
+}
+.grid-item{
+    background-color: brown;
+}
