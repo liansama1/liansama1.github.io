@@ -19,10 +19,7 @@ body{
     margin-bottom: 10px;
 }
 
-.menu {
-    width: 80%;
-    margin-top: 50px; /* Aumenta el margen superior para compensar el menú fijo */
-}
+
 
 #about{
     display: flex;
@@ -57,10 +54,9 @@ body{
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 1rem;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     background-color: rgba(166, 124, 82, 0.5);
 
 }
@@ -96,24 +92,35 @@ nav a {
     background-color:rgba(155, 170, 127, 0.5);
     background-repeat: no-repeat;
     justify-content: center;
+    padding-bottom: 20px;
 } 
+
+button{
+    background-color: rgba(81, 153, 66, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
 footer {
     background-color: rgba(166, 124, 82, 0.5);
-    color: white;
-    padding: 0.5rem;
+    color: rgb(0, 0, 0);
+    padding: 0px;
     text-align: center;
-
     bottom: 0;
     width: 100%;
     line-height: 1;
+    margin-top: 0px;
 }
 
 .footer-content {
     display: flex;
     justify-content:space-around;
     align-items: center;
-    margin: 10%;
+    ;
 }
     
 form {
@@ -124,10 +131,20 @@ form {
 }
 .producto {
     background-color: rgba(166, 124, 82, 0.584);
-    border-left: 6px solid rgba(181, 199, 154, 1); /* Verde oliva claro */
+    border-left: 6px solid rgba(181, 199, 154, 1); 
     padding: 20px 25px;
     margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   }
 
+@media (max-width: 768px) {
+    .header .section1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;}
+    .logo img{  
+        width: 100%;
+        height: auto;
+        max-width: 80px;}
+    }
