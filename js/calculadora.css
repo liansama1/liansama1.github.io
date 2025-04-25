@@ -1,0 +1,23 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.teclado {
+    background-color: #270094;
+    display: grid;
+    grid-template-columns: 45px 45px 45px 45px;
+    grid-template-rows: 45px 45px 45px 45px 45px;
+    justify-content: center;
+    gap: 10px;
+    max-width: 200px;
+    margin: 2px auto;
+    padding: 20px;
+}
+
+
+#pantalla{
+    width: 400px;
+    margin: 2px auto;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(94, 187, 85);
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    color: #000;
+    font-size: 2em;
+    text-align: center;
+}
+.container {
+    background-color: rgb(93, 93, 192);
+    width: 35%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-right: 30%;
+    align-items: center;
+    
+    
+}
