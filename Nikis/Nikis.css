@@ -148,3 +148,15 @@ form {
         height: auto;
         max-width: 80px;}
     }
+
+#carrito{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    font-size: 100%;
+    background-color:rgba(225, 172, 120, 0.5);
+    background-repeat: no-repeat;
+    justify-content: center;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikis</title>
+    <link rel="stylesheet" href="Nikis.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="section1">
+        <div class="logo">
+            <img src="Nikis Logo.png" alt="Logo de Fermentos Orgánicos Nikis" width="150px" height="150px">
+            <h2>Descubre el poder de los alimentos fermentados</h2>
+        </div>
+        <section class="Menu">
+        <nav>
+            <ul>
+                <li><a href="Nikis.html">Sobre Nosotros</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Contacto.html">Contactenos</a></li>
+                <li><a href="Carrito.html">Carrito (<span id="contador-carrito">0</span>)</a></li>
+            </ul>
+        </nav>
+        </section>
+        </div>
+    </header>
+
+    <section id="products">
+      <h2>Nuestros productos</h2>
+      <p>En <strong>Fermentos Orgánicos Nikis</strong> elaboramos cada uno de nuestros productos de forma <strong>artesanal</strong>, utilizando <strong>ingredientes orgánicos y frescos</strong>. Nos inspira la ciencia de la fermentación y el amor por lo natural. Descubre nuestras bebidas y alimentos vivos, llenos de sabor, tradición y beneficios para tu bienestar.
+        </p>  
+
+
+        <div class="producto" data-id="1" data-nombre="Kombucha" data-precio="15000">
+          <h3>Kombucha</h3>
+          <p><strong>Bebida probiótica a base de té</strong></p>
+          <p>
+            Fermentada con té orgánico y un cultivo vivo de microorganismos (SCOBY), la kombucha es una bebida naturalmente efervescente, rica en probióticos, ácidos orgánicos y antioxidantes. Refrescante y digestiva, ideal para fortalecer tu flora intestinal.
+          </p>
+          <ul>
+            <li><strong>Presentación:</strong> Botellas 500 mL</li>
+            <li><strong>Sabores disponibles:</strong> Natural, frutos rojos, jengibre-limón</li>
+            <li><strong>Precio:</strong>$ 15.000</li>
+          </ul>
+          <div class="compra-producto">
+            <label for="cantidad-1">Cantidad:</label>
+            <input type="number" id="cantidad-1" min="1" value="1" class="cantidad">
+            <button class="agregar-carrito" data-id="1">Agregar al carrito</button>
+          </div>
+        </div>
+  
+    <div class="producto" data-id="2" data-nombre="Koffucha" data-precio="20000">
+      <h3>Koffucha</h3>
+      <p><strong>La energía del café con los beneficios de la fermentación</strong></p>
+      <p>
+        Innovadora bebida fermentada a base de café orgánico, elaborada con el mismo consorcio microbiano de la kombucha. La koffucha conserva el aroma y sabor del café, pero con menor acidez, más suavidad, y un toque probiótico que apoya tu digestión sin perder el impulso energético.
+      </p>
+      <ul>
+        <li><strong>Presentación:</strong> Botellas de 500 mL</li>
+        <li><strong>Ideal para:</strong> Amantes del café que buscan una opción funcional y saludable</li>
+        <li><strong>Precio:</strong>$ 20.000</li>
+      </ul>
+      <div>
+        <label for="cantidad-2">Cantidad:</label>
+        <input type="number" id="cantidad-2" min="1" value="1" class="cantidad">
+        <button class="agregar-carrito" data-id="2">Agregar al carrito</button>
+      </div>
+    </div>
+  
+    <div class="producto" data-id="3" data-nombre="Kimchi" data-precio="50000">
+      <h3>Kimchi</h3>
+      <p><strong>Sabor intenso, salud intestinal</strong></p>
+      <p>
+        Nuestro kimchi es una mezcla de vegetales (principalmente col china y zanahoria), fermentados con ajo, jengibre y especias naturales. Rico en bacterias beneficiosas, enzimas y compuestos antioxidantes, fortalece la microbiota y aporta un sabor umami inconfundible.
+      </p>
+      <ul>
+        <li><strong>Presentación:</strong> Frascos de 400 g</li>
+        <li><strong>Nivel de picante:</strong> Medio</li>
+        <li><strong>Precio:</strong>$ 50.000</li>
+        <div>
+          <label for="cantidad-3">Cantidad:</label>
+          <input type="number" id="cantidad-3" min="1" value="1" class="cantidad">
+          <button class="agregar-carrito" data-id="3">Agregar al carrito</button>
+        </div>
+      </ul>
+    </div>
+  
+    <div class="producto" data-id="4" data-nombre="Yogurt" data-precio="18000">
+      <h3>Yogurt Bulgaro</h3>
+      <p><strong>Cultivado con leche orgánica y bacterias vivas</strong></p>
+      <p>
+        Elaborado con leche fresca de origen local y cultivos lácticos vivos. Nuestro yogur es suave, cremoso y naturalmente ácido, sin espesantes ni azúcares añadidos. Rico en calcio, proteínas y bacterias probióticas que ayudan a mantener una digestión equilibrada.
+      </p>
+      <ul>
+        <li><strong>Presentación:</strong> Frascos de 450 g</li>
+        <li><strong>Opciones:</strong> Natural o con frutas de temporada</li>
+        <li><strong>Precio:</strong>$ 18.000</li>
+      </ul>
+      <div>
+        <label for="cantidad-4">Cantidad:</label>
+        <input type="number" id="cantidad-4" min="1" value="1" class="cantidad">
+        <button class="agregar-carrito" data-id="4">Agregar al carrito</button>
+      </div>
+    </div>
+  
+    <div class="producto" data-id="5" data-nombre="Kéfir de leche" data-precio="25000">
+      <h3>Kéfir de leche</h3>
+      <p><strong>Un fermento vivo con múltiples beneficios</strong></p>
+      <p>
+        Bebida láctea fermentada por bacterias y levaduras que actúan en simbiosis, generando un producto rico en probióticos naturales. Ayuda a mejorar la digestión, aliviar el estreñimiento, apoyar el tratamiento del colon irritable y fortalecer el sistema inmunológico. Su textura es ligera y su sabor, ligeramente ácido.
+      </p>
+      <ul>
+        <li><strong>Presentación:</strong> Frascos de 950 g</li>
+        <li><strong>Recomendación:</strong> Consumir frío, ideal como bebida diaria o base para batidos</li>
+        <li><strong>Precio:</strong>$ 25.000</li>
+      </ul>
+      <div>
+        <label for="cantidad-5">Cantidad:</label>
+        <input type="number" id="cantidad-5" min="1" value="1" class="cantidad">
+        <button class="agregar-carrito" data-id="5">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="producto" data-id="6" data-nombre="Kéfir de Agua" data-precio="20000">
+      <h3>Kéfir de Agua</h3>
+      <p><strong>Hidratación probiótica y refrescante</strong></p>
+      <p>
+          Bebida fermentada a base de agua, panela y frutas deshidratadas, cultivada con nódulos de kéfir. Es una alternativa sin lácteos, ligeramente efervescente, rica en probióticos, enzimas y electrolitos. Ideal para personas con intolerancia a la lactosa o quienes buscan una bebida natural y revitalizante.        
+      </p>
+      <ul>
+        <li><strong>Presentación:</strong> Frascos de 500 mL</li>
+        <li><strong>Sabores disponibles:</strong> Limón-jengibre, Flor de Jamaica y Piña.</li>
+        <li><strong>Precio:</strong>$ 20.000</li>
+      </ul>
+      <div>
+        <label for="cantidad-6">Cantidad:</label>
+        <input type="number" id="cantidad-6" min="1" value="1" class="cantidad">
+        <button class="agregar-carrito" data-id="6">Agregar al carrito</button>
+      </div>
+    </div>
+
+
+  <p>Todos nuestros productos son elaborados de manera artesanal, utilizando ingredientes orgánicos y frescos. Nos preocupamos por la calidad y el sabor de cada uno de ellos.</p>
+  </section>
+
+
+<footer>
+
+  <div class="footer-content">
+      <div class="contacto">
+        <h4>Contacto</h4>
+        <p>+57 300 123 4567</p>
+        <p>fermentosnikis@gmail.com</p>
+        <p>Bucaramanga, Colombia</p>
+      </div>
+      <br>  
+      <div class="redes">
+        <h4>Síguenos</h4>
+        <a href="https://instagram.com/fermentosnikis" target="_blank"><img src="insta.png" alt="Instagram" width="50px"></a><br>
+        <a href="https://facebook.com/fermentosnikis" target="_blank"><img src="face.png" alt="facebook" width="50px"></a>
+      </div>
+    </div>
+      <div class="footer-bottom">
+      <p>Fermentamos con ciencia y corazón.</p>
+      <p>&copy; 2025 Fermentos Orgánicos Nikis. Todos los derechos reservados.</p>
+   </div>
+
+</footer>
+
+
+<script src="Nikis.js"></script>
+</body>
+</html>
